@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dolce Vita Italian Restaurant</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+</head>
+
+<body class="bg-dark text-light">
+    <div class="container">
+        <div class="jumbotron my-4 text-dark">
+            <h1 class="text-danger"><i class="fa fa-pizza-slice"></i> Dolce Vita Italian Restaurant</h1>
+            <h4 class="my-3">We only have 5 tables! <br>Book your seat before they all are gone!
+            </h4>
+            <hr class="my-4">
+            <a class="btn btn-warning btn-lg" href="/view" id="view-btn"><i class="fas fa-list"></i> View tables</a>
+            <a class="btn btn-danger btn-lg" href="/make" id="make-btn"><i class="fas fa-calendar-check"></i> Make Reservation</a>
+        </div>
+        <a class="link text-warning" href="/api/tables" target="_bank">API Tables</a> | <a class="link text-warning"
+            href="/api/waitlist" target="_bank">API Waitlist</a> | Page visited: <span id="home-counter"></span> times
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

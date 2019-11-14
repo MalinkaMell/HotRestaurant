@@ -1,6 +1,5 @@
 const express = require('express');
 require('dotenv').config(); //to read the .env
-//const keys = require('./keys.js'); //import my keys
 
 const PORT = process.env.PORT || 8080;
 const app = express();

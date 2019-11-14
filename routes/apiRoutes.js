@@ -1,9 +1,9 @@
-const keys = require('../keys.js'); //import my keys
 const nodemailer = require('nodemailer');
+require('dotenv').config(); //to read the .env
 const tables = require('../data/tables');
 const waitlist = require('../data/waitlist');
-let accountSid = keys.twillo.accountSid || accountSid;
-let authToken = keys.twillo.authToken || authToken;
+let accountSid = process.env.accountSid;
+let authToken = process.env.authToken;
 const twilio = require('twilio');
 const client = new twilio(accountSid, authToken);
 
@@ -74,8 +74,8 @@ module.exports = function (app) {
             port: 587,
             secure: true,
             auth: {
-                user: keys.gmail.email || email,
-                pass: keys.gmail.appPwd || appPwd//app pwd
+                user: process.env.email,
+                pass: process.env.appPwd //app pwd
             }
         });
 
@@ -103,7 +103,7 @@ module.exports = function (app) {
         client.messages.create({
             body: request.query.body,
             to: request.query.to,  // Text this number
-            from: keys.twillo.phoneNumber || phoneNumber// From a valid Twilio number
+            from: process.env.phoneNumber // From a valid Twilio number
         })
             .then(function (message) {
                 console.log(message.sid);

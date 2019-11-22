@@ -16,6 +16,6 @@ Demo of the project: <https://limitless-taiga-33344.herokuapp.com/>
 * Add a button for sending text messages to individuals on the wait-list letting them know they have a table ready. You will need to use the Twilio library to make this work. (A hard task, but very cool).
 
 
-Optimized for 1920x1080 screen resolution and Google Chrome Version 78
+**Optimized for 1920x1080 screen resolution and Google Chrome Version 78**
 
 _Made for University of Arizona Coding Bootcamp, Week-14, November 2019_

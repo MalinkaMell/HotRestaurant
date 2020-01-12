@@ -1,7 +1,5 @@
 # HotRestaurant - week 14 challenge activity
 
-Demo of the project: <https://limitless-taiga-33344.herokuapp.com/>
-
 * Description: Basic app demonstrating Node and Express with jQuery. Overall purpose is to help schedule reservation requests. Restaurant has just 5 tables available. First five requests get a reservation, every request after that is sent to the waiting list.
 * Live Demo: <https://hot-restaurant-fsf.herokuapp.com>
 
@@ -15,6 +13,11 @@ Demo of the project: <https://limitless-taiga-33344.herokuapp.com/>
 
 * Add a button for sending text messages to individuals on the wait-list letting them know they have a table ready. You will need to use the Twilio library to make this work. (A hard task, but very cool).
 
+---
+
+Demo of the project: <https://limitless-taiga-33344.herokuapp.com/>
+
+---
 
 **Optimized for 1920x1080 screen resolution and Google Chrome Version 78**
 
